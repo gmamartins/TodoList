@@ -1,0 +1,57 @@
+# ==========================
+# Arquivos de build / compilação
+# ==========================
+/target/
+/build/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================
+# IDEs
+# ==========================
+# IntelliJ
+/.idea/
+/*.iml
+/out/
+
+# Eclipse
+/.project
+/.classpath
+/.settings/
+
+# VS Code
+.vscode/
+
+# ==========================
+# Sistema operacional
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# Configurações sensíveis do Spring Boot
+# ==========================
+application.properties
+application.yml
+
+# ==========================
+# Arquivos de certificado / chave
+# ==========================
+*.jks
+*.p12
+*.pem
+*.key
+
+# ==========================
+# Outros arquivos temporários
+# ==========================
+*.tmp
+*.swp
+*.swo
