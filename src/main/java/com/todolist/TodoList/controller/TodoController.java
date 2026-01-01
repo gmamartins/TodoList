@@ -27,24 +27,22 @@ public class TodoController {
 	}
 
 	@PostMapping
-	List<Todo> create(@RequestBody Todo todo){
-		return todoService.create(todo);
-		
-	}
-	
-	@GetMapping
-	List<Todo> list(){
-		return todoService.list();
-	}
-	
-	@PutMapping
-	List<Todo> update(@RequestBody Todo todo){
-		return todoService.update(todo);
-	}
-	
-	@DeleteMapping("{id}")
-	List<Todo> delete(@PathVariable("id") Long id){
-		return todoService.delete(id);
-	}
-	
+    public Todo create(@RequestBody Todo todo){
+        return todoService.create(todo); // retorna o objeto criado
+    }
+
+    @GetMapping
+    public List<Todo> list(){
+        return todoService.list();
+    }
+
+    @PutMapping("/{id}")
+    public Todo update(@PathVariable Long id, @RequestBody Todo todo){
+        return todoService.update(id, todo); // retorna o objeto atualizado
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        todoService.delete(id); // geralmente delete retorna void
+    }
 }
