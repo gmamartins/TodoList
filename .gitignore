@@ -9,6 +9,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Configuração local (NÃO versionar)
+src/main/resources/application.properties
+
 # =========================
 # STS / Eclipse
 # =========================
